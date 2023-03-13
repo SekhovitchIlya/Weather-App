@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="background: url('https://assets.cntraveller.in/photos/62a6e04725a409c7e0f2d254/master/pass/weather-story-june.jpg');"
+  >
+    <div class="container">
+      <header>
+        <a href="#" class="border-0 myBtn"
+        id='current-button'>
+          <i class="fa-solid fa-location-dot"></i>
+        </a>
+
+        <form class="d-flex" id="form">
+          <input
+            type="search"
+            placeholder="City"
+            class="form-control me-2"
+            id="input-city"
+          />
+          <button type="submit" class="btn search-button myBtn">Search</button>
+        </form>
+      </header>
+
+      <main class="main">
+        <div class="top">
+          <div class="city-name">
+            <h1 class="current-city" id="current-city">Minsk</h1>
+            <h2 class="temperature">
+              <strong id="day-temp">20</strong>
+              <span class="degress">
+                <a href="#" id="celsius"><sup>o</sup>C</a>
+                <span>|</span>
+                <a href="#" id="fahrenheit"><sup>o</sup>F</a>
+              </span>
+            </h2>
+          </div>
+
+          <div class="pic">
+            <img src="#" alt="weather-icon" id="weather-icon" />
+          </div>
+        </div>
+
+        <div class="weather-info">
+          <div class="info-main">
+            <p><span id="sky">Partly Cloudy</span></p>
+            <p>Precipitation: <span id="rain">30</span>%</p>
+            <p>Wind: <span id="wind">5</span> km/h</p>
+          </div>
+
+          <div class="other-main">
+            <p><span id="month">December</span>, <span id="date">21</span></p>
+            <p><span id="day">Friday</span></p>
+            <p><span id="hours">20</span>:<span id="minutes">00</span></p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

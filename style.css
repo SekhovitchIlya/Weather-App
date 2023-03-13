@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {  
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.myBtn {
+  border: 1px solid white;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.myBtn:hover {
+  color: #fff;
+}
+
+.main {
+  margin: 10px 40px;
+
+}
+
+.top {
+  text-align: center;
+}
+
+#celsius,
+#fahrenheit {
+  color: #000;
+}
+
+#celsius:hover,
+#fahrenheit:hover {
+  color: rgb(255, 255, 255);
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
